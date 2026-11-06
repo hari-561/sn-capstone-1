@@ -1,0 +1,590 @@
+So now I am about to do a service now capstone project.... I have uploaded the document.... Go through it clearly guide me properly through eash ans evey steps... I am usjg the Brazil version... I will be side by side doing my document also by lasting the required screenshkta as mentioned... Also guide ongtgat also when toctake it and what to put in the doc.... We'll donstep by step... Do not assume anything if you have any doubts ask me...
+
+
+
+SERVICENOW CAPSTONE PROJECT – COMPLETE HANDOVER
+
+1. Project overview
+
+I am working on an individual ServiceNow capstone project based on the document:
+
+ServiceNow ITSM, CSM, FSM and ITAM Training Programme – Capstone Project Requirements Specification
+
+- Document ID: CAP-SN-001
+- Version: 1.0
+- Issue date: November 2026
+- Assessment: Individual, hands-on implementation
+- Total marks: 100
+- Pass mark: 70
+- Evidence pack: PDF, maximum 30 pages
+- Required environment: Own ServiceNow Personal Developer Instance (PDI)
+
+I am using the Brazil release, while the requirements document refers to the Australia release. Therefore, guide me using the actual menus and fields available in my Brazil instance. Do not assume that the navigation or form layouts are identical.
+
+The programme owner has permitted me to use AI assistance.
+
+2. Business scenario
+
+The fictional company is Brightwave Business Solutions, a managed technology provider.
+
+Its customer is Northwind Dental Group.
+
+The scenario:
+
+1. A practice manager reports that their laptop will not power on.
+2. A customer service agent creates a CSM case.
+3. The agent uses a knowledge article and the applicable service entitlement.
+4. A playbook guides the device replacement process.
+5. A field technician receives a work order with two dependent tasks.
+6. The technician diagnoses the faulty laptop and replaces it.
+7. The faulty laptop is retired and the replacement laptop is deployed.
+8. The asset records and Configuration Items (CIs) are reconciled.
+9. Software installations and licence entitlements are analysed.
+10. The entire process is documented in a traceability table and reflection.
+
+3. Important project rules
+
+- Every record created must start with "CAP-GH", using my initials GH.
+- Use fictional data only.
+- Do not create records without the required prefix.
+- Do not use HAM Pro. It is not required.
+- SAM Pro and Software Asset Workspace are optional.
+- If a feature is unavailable, capture a screenshot, implement the closest possible alternative and explain the limitation in the report.
+- Do not assume fields or navigation options. Ask me for a screenshot when the interface differs.
+- Prefer out-of-the-box ServiceNow configuration over unnecessary scripts.
+- Guide me step by step and wait for confirmation before moving to the next stage.
+
+4. ServiceNow environment
+
+- Release: Brazil
+- Instance: My own PDI
+- I am working through the available modules and applications.
+- Some modules or features may be unavailable because of plugin or licensing limitations.
+- We decided not to check every plugin upfront. If a required module is missing, investigate that specific plugin or an alternative at that stage.
+
+5. Naming convention and fictional customer details
+
+Use these values consistently throughout the project.
+
+Customer account
+
+"CAP-GH Northwind Dental Group"
+
+Contacts
+
+Name| Role / Title| Email
+Olivia Bennett| Practice Manager| olivia.bennett@example.com
+Daniel Carter| IT Lead| daniel.carter@example.com
+
+These are fictional example details.
+
+The practice manager is the primary contact for the laptop failure scenario.
+
+Planned service contract
+
+Name:
+"CAP-GH Northwind Dental Support Contract"
+
+Contract number:
+"CAP-GH-SC-001"
+
+Planned details:
+
+- Account: CAP-GH Northwind Dental Group
+- Contract administrator: My own ServiceNow user account, if available
+- Start date: 06 November 2026
+- End date: 06 November 2027
+- Status: Active, if the form provides a status field
+
+The contract form asked for:
+
+- Account
+- Contract number
+- Contract administrator
+- Start date
+- End date
+
+The previous assistant instructed me to use the above values.
+
+Important: Verify that the contract was actually saved and is active. I said I had obtained the Service Contracts module, filled the discussed fields and then said we could move on, but I did not explicitly confirm the saved record or provide its record number.
+
+Planned entitlement
+
+Name:
+"CAP-GH Device Support Entitlement"
+
+Planned details:
+
+- Consumer: Olivia Bennett (Practice Manager)
+- Account: CAP-GH Northwind Dental Group, if available
+- Service contract: CAP-GH Northwind Dental Support Contract, if available
+- Active: True
+- Description: Device support case coverage for Northwind Dental Group
+
+I opened the Entitlements module and encountered a field called Consumer.
+
+The previous assistant recommended choosing Olivia Bennett because she is the practice manager reporting the laptop failure.
+
+Current status: I asked which consumer to select and received the recommendation to select Olivia Bennett. I have NOT confirmed that the entitlement was saved.
+
+The next assistant must inspect the actual entitlement form and verify its available fields. Do not assume that the entitlement is linked to the account and contract merely because the consumer is selected.
+
+The A1 requirement specifically says the entitlement must be linked to both the contract and the account.
+
+---
+
+6. Work completed so far
+
+A1 – Customer setup (6 marks)
+
+Completed:
+
+- Created the customer account "CAP-GH Northwind Dental Group".
+- Created two contacts under the account:
+  - Olivia Bennett – Practice Manager
+  - Daniel Carter – IT Lead
+
+I explicitly confirmed that both contacts were created under the account.
+
+Still to verify or complete:
+
+- Verify the service contract exists and is Active.
+- Verify the entitlement exists.
+- Verify the entitlement is linked to both the account and service contract.
+- Capture screenshots showing the account and its contacts, contract and entitlement.
+
+Suggested report text, to use once all A1 criteria are verified:
+
+"Created the customer account CAP-GH Northwind Dental Group in ServiceNow. Added two contacts associated with the account: Olivia Bennett, Practice Manager, and Daniel Carter, IT Lead. Both contacts are linked to the same customer account and have distinct business roles. An active service contract and a device support entitlement were configured to provide the customer with coverage for device support cases."
+
+Do not claim the contract and entitlement are complete until verified.
+
+A1 evidence
+
+Capture:
+
+- A1-1: Account form or account contacts related list showing both contacts.
+- A1-2: Active service contract.
+- A1-3: Entitlement showing the relevant account and contract relationship.
+
+7. Remaining requirements – full project checklist
+
+The project has five parts.
+
+PART A – Customer and case (25 marks)
+
+A1 – Customer setup (6 marks)
+
+- Customer account with two contacts of different roles.
+- Active service contract.
+- Entitlement linked to account and contract.
+
+A2 – Knowledge article (4 marks)
+
+Create and publish:
+
+"CAP-GH Laptop will not power on: first checks"
+
+Requirements:
+
+- Published article.
+- At least four numbered troubleshooting steps.
+- Visible to customer service agents when they work on a case.
+
+Suggested article steps:
+
+1. Verify that the laptop power adapter is securely connected to a working power outlet.
+2. Check the power cable and adapter for visible damage.
+3. Disconnect external devices and hold the power button for approximately 15 seconds.
+4. Reconnect the adapter and attempt to power on the laptop.
+5. If the laptop still does not power on, arrange a technician inspection or replacement.
+
+Capture screenshot A2-1 showing the published article and troubleshooting steps.
+
+A3 – Case from first contact to resolution (10 marks)
+
+Create a CSM case for Olivia Bennett reporting that her laptop will not power on.
+
+Requirements:
+
+- Link the case to the customer account.
+- Link the practice manager contact.
+- Link the entitlement or contract.
+- Set a sensible category and priority.
+- Assign a suitable assignment group.
+- Attach the knowledge article.
+- Ensure an SLA is attached and visible.
+- Add meaningful work notes or comments.
+- Resolve the case only after the field work order is complete.
+
+Suggested short description:
+"CAP-GH Practice Manager Laptop Not Powering On"
+
+Capture:
+
+- A3-1: Case at creation.
+- A3-2: Case showing attached knowledge article.
+- A3-3: Case showing SLA.
+- A3-4: Resolved case with resolution notes.
+
+A4 – Playbook (5 marks)
+
+Create:
+
+"CAP-GH Device replacement"
+
+Requirements:
+
+- At least three steps.
+- At least one manual agent step.
+- At least one customer communication step.
+- Published or activated.
+- Linked to the case or demonstrate that it can be started on the case.
+
+Possible steps:
+
+1. Review the laptop failure and validate troubleshooting information.
+2. Contact the customer and communicate the replacement plan.
+3. Coordinate the field technician visit and confirm replacement completion.
+
+If playbooks are unavailable, capture the limitation and explain the nearest alternative.
+
+---
+
+PART C – Assets and CMDB (25 marks)
+
+The requirements document suggests doing Part C before Part B because the work order needs the asset and CI records.
+
+C1 – Master data (4 marks)
+
+Create:
+
+Manufacturer:
+"CAP-GH TechSource"
+
+Hardware model:
+"CAP-GH Laptop 15"
+
+Category:
+"Computer"
+
+Stockroom:
+"CAP-GH Stockroom"
+
+Assign a stockroom manager.
+
+Evidence:
+
+- C1-1: Manufacturer/model form.
+- C1-2: Stockroom form showing its manager.
+
+C2 – Two laptops (7 marks)
+
+Create two hardware assets using the above model.
+
+Faulty laptop:
+
+- Asset tag: "CAP-GH-OLD-001"
+- Unique fictional serial number.
+- State: In use.
+- Assigned to Olivia Bennett or a user created for her.
+
+Replacement laptop:
+
+- Asset tag: "CAP-GH-NEW-001"
+- Different fictional serial number.
+- State: In stock.
+- Stockroom: CAP-GH Stockroom.
+
+Both assets must use the same model.
+
+Evidence:
+
+- C2-1: Asset list filtered to the two asset tags.
+- C2-2: Faulty laptop form.
+- C2-3: Replacement laptop form.
+
+C3 – CI link and reconciliation (8 marks)
+
+Requirements:
+
+- Create a matching CI for each laptop.
+- Link assets and CIs both ways.
+- Use serial number as the match key.
+- Deliberately create one mismatch:
+  - Asset without CI, or
+  - CI without asset, or
+  - Two CIs with the same serial number.
+- Detect it using a visible list filter.
+- Resolve the mismatch.
+- Show before and after screenshots.
+
+Evidence:
+
+- C3-1: Mismatch before correction.
+- C3-2: Filter showing the mismatch.
+- C3-3: Corrected records.
+- C3-4: Filter showing the successful fix.
+
+Explain which match key was used and why: serial number is used to identify the corresponding hardware record.
+
+C4 – Replacement lifecycle (6 marks)
+
+After the device swap:
+
+Replacement laptop:
+
+- State: In use.
+- Assigned to Olivia Bennett or her corresponding user.
+- No stockroom.
+
+Faulty laptop:
+
+- State: Retired or the closest available retired state.
+- No assigned user.
+- No longer In use.
+
+Ensure the asset history shows the state changes.
+
+Evidence:
+
+- C4-1: Replacement laptop after deployment.
+- C4-2: Faulty laptop after retirement.
+- C4-3: Asset history.
+
+---
+
+PART B – Field visit (25 marks)
+
+Complete this after Part C.
+
+B1 – Work order from case (6 marks)
+
+Create a work order from the customer case.
+
+Create service location:
+"CAP-GH Northwind Dental Clinic"
+
+Requirements:
+
+- Work order linked to the case.
+- Customer/company populated.
+- Service location populated.
+- Description identifies the faulty laptop and customer contact.
+- Assigned or ready for dispatch.
+
+Evidence:
+
+- B1-1: Work order header showing the case relationship.
+
+B2 – Tasks, skills and dispatch (12 marks)
+
+Create two tasks:
+
+1. "CAP-GH Diagnose laptop"
+2. "CAP-GH Replace laptop and verify"
+
+Requirements:
+
+- Both tasks belong to the work order.
+- Second task depends on first task.
+- Each task has at least one required skill.
+- Create a technician with matching skill.
+- Assign both tasks to that technician.
+- Complete tasks in the correct order.
+- Complete or close the work order.
+
+Use existing skills if suitable, or create skills with the CAP-GH prefix.
+
+Evidence:
+
+- B2-1: Task list and dependency.
+- B2-2: Required skills.
+- B2-3: Technician and assignment.
+- B2-4: Completed task and work order states.
+
+B3 – Device on work order (7 marks)
+
+After completing Part C:
+
+- Set the faulty laptop as the affected asset or CI on the work order.
+- Record the replacement laptop in work notes or the available replacement-device field.
+- Ensure both references match the asset and CI records created in Part C.
+
+Evidence:
+
+- B3-1: Work order showing faulty device reference and replacement-device note.
+
+---
+
+PART D – Software position (15 marks)
+
+D1 – Installations (5 marks)
+
+Find a software product that has installations in the instance's software installation data.
+
+Record:
+
+- Product name.
+- Publisher.
+- Number of installations.
+- Names of at least three computers that have the software.
+
+Prefer a product with at least five installations, if one exists.
+
+Evidence:
+
+- D1-1: Filtered software installation list with row count visible.
+
+D2 – Entitlement and recommendation (10 marks)
+
+Create or identify a software model for the selected product.
+
+Create an entitlement linked to that model.
+
+Requirements:
+
+- Licence metric: Per Device.
+- Purchased rights: Three fewer than installation count, or one if installation count is three or fewer.
+- Assumed price: 100 per right.
+
+Calculations:
+
+- Licence gap = Installations − Purchased rights.
+- If gap is positive: under-licensed.
+- If gap is zero: compliant.
+- If gap is negative: over-licensed.
+- Cost to close a positive gap = Gap × 100.
+
+Provide a recommendation and one alternative to buying additional licences, such as removing unused installations or reclaiming licences.
+
+Evidence:
+
+- D2-1: Entitlement screenshot.
+- D2-2: Table showing installations, rights, gap, licence position, cost and recommendation.
+
+Optional bonus:
+
+- Use Software Asset Workspace reconciliation if available.
+- Up to 5 bonus points.
+- No penalty if unavailable.
+
+---
+
+PART E – Traceability and reflection (10 marks)
+
+E1 – Traceability table (6 marks)
+
+Create one table with actual record identifiers for:
+
+- Customer case.
+- Work order.
+- Both work order tasks.
+- Faulty asset.
+- Replacement asset.
+- Both CIs.
+- Customer contact.
+- Analysed software product.
+
+For each relationship, specify the field or relationship connecting the records.
+
+Clearly label CSM, FSM and ITAM portions of the chain.
+
+E2 – Reflection (4 marks)
+
+Write a maximum 400-word reflection explaining:
+
+- How data moved from CSM to FSM to ITAM.
+- How the case led to the work order.
+- How the technician tasks supported the device replacement.
+- How the asset and CI records were updated.
+- How the software entitlement analysis supports licence management.
+
+List three realistic improvements for a real implementation. At least one must name a Pro capability, such as HAM Pro lifecycle automation or SAM Pro reclamation, and explain what it would add.
+
+---
+
+8. Evidence pack and final submission
+
+Create one evidence document with a section for every requirement A1 through E2.
+
+- Maximum 30 pages.
+- Include screenshots and short notes.
+- Every screenshot must show the record number or name and enough of the browser to identify the instance.
+- Crop only empty space.
+- Do not hide important details through editing or annotation.
+- Label screenshots using requirement IDs, such as A1-1, A2-1, B1-1.
+- Include the completion checklist as the last page.
+- Export the evidence document as PDF.
+
+Suggested filename:
+"Capstone_Hari_Kumar_GH_20261106.pdf"
+
+The requirements document also says to name the file:
+"Capstone_FirstName_LastName_YYYYMMDD.pdf"
+
+Use the filename format required by the programme owner if it differs.
+
+The instance should remain available for reviewer checks for seven days after submission.
+
+9. Suggested implementation order
+
+The requirements document recommends:
+
+1. Part A – Customer and case.
+2. Part C – Assets and CMDB.
+3. Part B – Field visit.
+4. Part D – Software position.
+5. Part E – Traceability and reflection.
+
+This order is useful because the work order in Part B must reference the assets and CIs from Part C.
+
+10. How I want the next AI assistant to guide me
+
+Please follow these working preferences:
+
+1. Continue from the actual current progress; do not restart the project.
+2. First verify whether the service contract was saved and whether the entitlement exists.
+3. Guide me one step at a time.
+4. Keep instructions concise because I have a strict deadline.
+5. Do not assume fields, menus, plugins or features exist in the Brazil release.
+6. If the interface differs, ask me for a screenshot and guide me based on it.
+7. Tell me exactly when to capture each evidence screenshot and what it must show.
+8. Help me write the report section alongside the implementation, rather than waiting until the end.
+9. Do not mark a requirement complete until its acceptance criteria are satisfied and evidence is captured.
+10. Prioritise required marks over optional bonus features.
+11. Do not use unnecessary scripts when an out-of-the-box feature can meet the requirement.
+12. Keep a running checklist of completed and pending requirements.
+
+11. Exact current stopping point
+
+The work currently stands as follows:
+
+Item| Status
+Customer account CAP-GH Northwind Dental Group| Created
+Olivia Bennett – Practice Manager| Created under account
+Daniel Carter – IT Lead| Created under account
+Service Contracts module| Located
+Service contract| Fields discussed; saved status needs verification
+Entitlements module| Located
+Entitlement consumer| Recommended Olivia Bennett
+Entitlement saved and linked to account/contract| Not yet confirmed
+Knowledge article| Not started
+CSM case| Not started
+Playbook| Not started
+Hardware model/manufacturer/stockroom| Not started
+Hardware assets| Not started
+CIs and reconciliation| Not started
+Work order and tasks| Not started
+Software installation analysis| Not started
+Software entitlement| Not started
+Traceability and reflection| Not started
+Evidence PDF| Not started
+
+Immediate next action: Continue with the entitlement form. Check its actual fields, select Olivia Bennett as Consumer if appropriate, and ensure the entitlement is linked to the customer account and active service contract. Verify that the service contract was saved and is active before proceeding to A2.
+
+Do not assume any record number or claim a record was saved unless I confirm it.
+
+---
+
+End of handover context. Please continue guiding me from the current stopping point.
